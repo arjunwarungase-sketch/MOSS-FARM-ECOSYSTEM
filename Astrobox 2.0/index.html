@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moss Farm Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>🌱 Astrobox Controller</h1>
+        <p>Powered by MOSS OS</p>
+        <p>Smart Ecosystem Controller</p>
+        <p class="online">
+         System Status: 🟢 ONLINE
+        </p>
+    </header>
+
+<main class="dashboard">
+
+    <section class="sensor-grid">
+
+    <div class="card">
+
+        <div class="icon">🌡</div>
+        <h2>Air Temperature</h2>
+
+        <p class="value" id="airTemp">24°C</p>
+
+        <p class="status perfect">🟢 PERFECT</p>
+
+    </div>
+
+    <div class="card">
+        <div class="icon">💧</div>
+
+        <h2>Humidity</h2>
+
+        <p class="value" id="humidity">90%</p>
+
+        <p class="status perfect">🟢 PERFECT</p>
+
+    </div>
+
+    <div class="card">
+        <div class="icon">🥥</div>
+
+        <h2>Soil Moisture</h2>
+
+        <p class="value" id="soilMoisture">86%</p>
+
+        <p class="status warning">🟡 WARNING</p>
+
+    </div>
+
+    <div class="card">
+        <div class="icon">🌱</div>
+
+        <h2>Soil Temperature</h2>
+
+        <p class="value" id="soilTemp">20°C</p>
+
+        <p class="status warning">🟡 WARNING</p>
+
+    </div>
+
+    <div class="card">
+        <div class="icon">💦</div>
+
+        <h2>Water Level</h2>
+
+        <p  class="value" id="waterLevel">86%</p>
+
+        <p class="status critical">🔴 CRITICAL</p>
+
+    </div>
+
+    <div class="card">
+
+    <div class="icon">🟢</div>
+
+    <h2>Ecosystem Health</h2>
+
+    <p class="value" id="ecosystemHealth">92%</p>
+
+    <p class="status perfect">🟢 PERFECT</p>
+
+    </div>
+
+    </section>
+
+    <section class="controls">
+
+    <h2>🌱 Control Panel</h2>
+
+    <button class="autoBtn" id="autoBtn">
+        🤖 Auto Mode 
+    </button>
+
+    <div class="controlGrid">
+
+        <button class="modeBtn" id="mistBtn">
+            🌫 Mist OFF
+        </button>
+
+        <button class="modeBtn" id="fanBtn">
+            🌬 Fan OFF
+        </button>
+
+        <button class="modeBtn" id="lightBtn">
+            💡 Lights OFF
+        </button>
+
+        <button class="modeBtn" id="dripperBtn">
+            💧 Irrigation OFF
+        </button>
+
+    </div>
+
+    </section>
+
+    <section class="aiPanel">
+
+        <h2>🤖 AI Captain</h2>
+
+        <div class="aiCard">
+
+            <p id="aiStatus">
+                Monitoring Ecosystem...
+            </p>
+            
+            <p id="aiReason">
+                Waiting for sensor data...
+            </p>
+
+        </div>
+
+        <div class="aiLog">
+
+    <h3>📜 AI Activity Log</h3>
+
+    <div id="logContainer">
+
+        <p>🤖 System Started...</p>
+
+    </div>
+
+    </div>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
